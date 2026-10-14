@@ -1,0 +1,24 @@
+
+Changed tempt (act_evil.c) to allow more than 1 word per command
+Added a bug check for logout (act_comm.c)
+Remove do_berserk call from act_move.c
+Removed usernames from shitlist in gain_exp (update.c)
+the hurricane around %n vanishes, changed to $n (heart.c)
+removed \n\r from do_say in healer (act_obj.c)
+removed do_berserk call from aggr_update (update.c)
+reenabled dumping core in init_signals (system.c)
+removed two more occurances of berserk (act_evil.c and combat.c)
+eliminated the use of site.c with possible minor slowdown on host resolv
+  but saving diskspace, code was wasted anyway.
+
+decided that there was no way to continue debugging the code in its current
+state, decided to rewrite the bad stuff, throw away things we don't need.
+decided to rewrite major portions of it at the expense of my free time
+  
+  TODO: 
+     pull the editor, pure garbage (system.c)
+     remove every occurance of hard coded level numbers 
+     get rid of all warnings (done for the most part)
+     get rid of the horrid registration code (very unsafe, glad its not in use)
+     rewrite the spells/skills were missing
+     

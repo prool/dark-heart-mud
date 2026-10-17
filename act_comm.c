@@ -1829,7 +1829,7 @@ void do_quit( CHAR_DATA *ch, char *argument )
 	if (tch && tch->id == id)
 	{
 	    /* whois */
-	    logf("Possible bug: Toasting an evil cheating bastard: %s.", tch->name);
+	    logf_("Possible bug: Toasting an evil cheating bastard: %s.", tch->name);
 /*	    extract_char(tch,TRUE);
 	    close_socket(d); */
 	} 

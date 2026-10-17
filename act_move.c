@@ -3640,8 +3640,7 @@ void do_thaumaone(CHAR_DATA *ch, char *argument)
 	gen = 14 - victim->generation;
     else gen = victim->generation;
 
-    sprintf(buf, "You deduce your victim has %d blood points, and is 
-generation %d.\n\r",victim->blood, gen);
+    sprintf(buf, "You deduce your victim has %d blood points, and is generation %d.\n\r",victim->blood, gen);
     send_to_char(buf, ch);
 }
 

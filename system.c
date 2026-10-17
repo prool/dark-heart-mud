@@ -184,9 +184,9 @@ void editor( DESCRIPTOR_DATA *d )
 		    if (ch->pcdata->menu_flag[line] == MENU_TYPE_BOOL)
 		    {
 			if (ch->pcdata->edit[line][40] == '0')
-			    (bool *) *(ch->pcdata->menu_variable[line]) = FALSE;
+			    *(ch->pcdata->menu_variable[line]) = FALSE;
 			else
-			    (bool *) *(ch->pcdata->menu_variable[line]) = TRUE;
+			    *(ch->pcdata->menu_variable[line]) = TRUE;
 		    }
 		    else if (ch->pcdata->menu_flag[line] == MENU_TYPE_FLAG)
 		    {
@@ -198,22 +198,22 @@ void editor( DESCRIPTOR_DATA *d )
 		    else if (ch->pcdata->menu_flag[line] == MENU_TYPE_INT)
 		    {
 			if (ch->pcdata->edit[line][40] == 0)
-			    (int *) *(ch->pcdata->menu_variable[line]) = 0;
+			    *(ch->pcdata->menu_variable[line]) = 0;
 			else
 			{
 			    int value = atoi(&(ch->pcdata->edit[line][40]));
 			    if (value > ch->pcdata->menu_range[line][1]) value = ch->pcdata->menu_range[line][1];
 			    if (value < ch->pcdata->menu_range[line][0]) value = ch->pcdata->menu_range[line][0];
-			    (int *) *(ch->pcdata->menu_variable[line]) = value;
+			    *(ch->pcdata->menu_variable[line]) = value;
 			}
 		    }
 		    else if (ch->pcdata->menu_flag[line] == MENU_TYPE_LONG)
 		    {
 			if (ch->pcdata->edit[line][40] == 0)
-			    (long *) *(ch->pcdata->menu_variable[line]) = 0;
+			    *(ch->pcdata->menu_variable[line]) = 0;
 			else
 			{
-			    (long *) *(ch->pcdata->menu_variable[line]) = atoi(&(ch->pcdata->edit[line][40]));
+			    *(ch->pcdata->menu_variable[line]) = atoi(&(ch->pcdata->edit[line][40]));
 			}
 		    }
 		    else if (ch->pcdata->menu_flag[line] == MENU_TYPE_SH_INT)
@@ -221,7 +221,7 @@ void editor( DESCRIPTOR_DATA *d )
 			    int value = atoi(&(ch->pcdata->edit[line][40]));
 			    if (value > ch->pcdata->menu_range[line][1]) value = ch->pcdata->menu_range[line][1];
 			    if (value < ch->pcdata->menu_range[line][0]) value = ch->pcdata->menu_range[line][0];
-			    (sh_int *) *(ch->pcdata->menu_variable[line]) = value;
+			    *(ch->pcdata->menu_variable[line]) = value;
 		    }
 		    else if (ch->pcdata->menu_flag[line] == MENU_TYPE_STRING)
 		    {
@@ -1683,7 +1683,7 @@ void init_descriptor( int control )
     return;
 }
 
-void logf (char * fmt, ...)                                                    
+void logf_ (char * fmt, ...)                                                    
 {                                                                             
         char buf [2*MSL];                                                    
         va_list args;                                                        
@@ -1705,7 +1705,7 @@ void do_copyover (CHAR_DATA *ch, char * argument)
 	if (!fp)
 	{
 		send_to_char ("Copyover file not writeable, aborted.\n\r",ch);
-		logf ("Could not write to copyover file: %s", COPYOVER_FILE);
+		logf_("Could not write to copyover file: %s", COPYOVER_FILE);
 		perror ("do_copyover:fopen");
 		return;
 	}
@@ -1767,14 +1767,14 @@ void copyover_recover ()
 	int desc;
 	bool fOld;
 	
-	logf ("Copyover recovery initiated");
+	logf_("Copyover recovery initiated");
 	
 	fp = fopen (COPYOVER_FILE, "r");
 	
 	if (!fp) /* there are some descriptors open which will hang forever then ? */
 	{
 		perror ("copyover_recover:fopen");
-		logf ("Copyover file not found. Exitting.\n\r");
+		logf_("Copyover file not found. Exitting.\n\r");
 		exit (1);
 	}
 

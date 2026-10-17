@@ -404,83 +404,30 @@ const char * transformation_message[2][12] =
 
 {
 	{
-		"Your body shudders and convulses as your form transforms.  Arms and legs grow out of
-your slimy torso, your skin turns a sickly veined green.\n\r" ,
-		"Your demonic form is reduced to a pool of pulsating jelly, the fires of hell
-heat and char your semi-liquid form until you stiffen.  Limbs grow and spiny
-talons extend from your arms and back.\n\r" ,
-		"You start the transformation.  Your gargoylish apperance is changed as you grow
-another two feet in height.  Scales, dripping with acid, begin to cover your
-skin.\n\r" ,
-		"The fires of hell surround you once more.  Sharp claws start to grow from
-your hands, and you grow a viscious barbed tail.  Small flames play over your
-burnt and blackened skin.\n\r" ,
-		"Your next form is that of a sickly, gaunt skeleton.  Your leathery flesh
-held tight over a demonic frame.  A huge tail, with a poisonous barb on the end
-protrudes out of the base of your spine.\n\r" ,
-		"As you transform, you grow another four feet in height.  This time, wicked
-barbs cover your entire body.  You find you have the ability to wield weapons
-weapons, and use armor.\n\r" ,
-		"What?  What is happening, with the transformation into an Erinyes, your
-form is no longer repulsive and demonic, but you are now a beautiful
-mortal, with long auburn hair and huge white wings growing out of your
-back.  You can see the world again with your mortal eyes, but the 
-passions of a demon will always stay.\n\r",
-		"Your skin melts and you transform once more, but this time you become a gruesome
-pug nosed, vile dwarf-like creature with large leathery wings and a mouth
-filled of razor sharp teeth, an Amnizu.\n\r" ,
-		"The intense heat of the fires of Baator surround you.  Your skin is
-wrenched apart and you transform into a grotesque 9-foot tall monstrosity
-with huge wings, a snaking, prehensile tail, and a long barbed
-whip.  A true demon, a Cornugon.\n\r",
-		"The power of Baator now fills your very soul.  You grow again
-as the chill winds of Caina tear the flesh from your bones.  You look to see what
-you have become, you look alien, with a twelve foot long icy insect-like
-body, your head bulging with multi-faceted eyes and you have
-a long tail covered with razor-sharp spikes.\n\r",
-		"Aaargh!  You are cast into the pit of flame. The fires, more intense
-than ever before sear and scar your flesh as it bubbles and boils.
-You have become the most terrible demon, the Pit Fiend, a huge bat winged 
-humanoid, twelve feet tall, with large fangs that drip with a vile green liquid
-and a hulking red scaly body that bursts into flame when you are angered or
-excited.\n\r",
-		"Your fiery skin blackens as you are infused with the embodiment of
-ultimate evil.  You are the most powerful demon, the lord of all.  You
-are everything, nothing can oppose you.  Twenty foot tall, your torso
-drips with the vile acid of the Abyss.  A ravenous hunger is gnawing at your
-bones.  Welcome to Immortality..."
+		"Your body shudders and convulses as your form transforms.  Arms and legs grow out of your slimy torso, your skin turns a sickly veined green.\n\r" ,
+		"Your demonic form is reduced to a pool of pulsating jelly, the fires of hell heat and char your semi-liquid form until you stiffen.  Limbs grow and spiny talons extend from your arms and back.\n\r" ,
+		"You start the transformation.  Your gargoylish apperance is changed as you grow another two feet in height.  Scales, dripping with acid, begin to cover your skin.\n\r" ,
+		"The fires of hell surround you once more.  Sharp claws start to grow from your hands, and you grow a viscious barbed tail.  Small flames play over your burnt and blackened skin.\n\r" ,
+		"Your next form is that of a sickly, gaunt skeleton.  Your leathery flesh held tight over a demonic frame.  A huge tail, with a poisonous barb on the end protrudes out of the base of your spine.\n\r" ,
+		"As you transform, you grow another four feet in height.  This time, wicked barbs cover your entire body.  You find you have the ability to wield weapons weapons, and use armor.\n\r" ,
+		"What?  What is happening, with the transformation into an Erinyes, your form is no longer repulsive and demonic, but you are now a beautiful mortal, with long auburn hair and huge white wings growing out of your back.  You can see the world again with your mortal eyes, but the passions of a demon will always stay.\n\r",
+		"Your skin melts and you transform once more, but this time you become a gruesome pug nosed, vile dwarf-like creature with large leathery wings and a mouth filled of razor sharp teeth, an Amnizu.\n\r" ,
+		"The intense heat of the fires of Baator surround you.  Your skin is wrenched apart and you transform into a grotesque 9-foot tall monstrosity with huge wings, a snaking, prehensile tail, and a long barbed whip.  A true demon, a Cornugon.\n\r",
+		"The power of Baator now fills your very soul.  You grow again as the chill winds of Caina tear the flesh from your bones.  You look to see what you have become, you look alien, with a twelve foot long icy insect-like body, your head bulging with multi-faceted eyes and you have a long tail covered with razor-sharp spikes.\n\r",
+		"Aaargh!  You are cast into the pit of flame. The fires, more intense than ever before sear and scar your flesh as it bubbles and boils.  You have become the most terrible demon, the Pit Fiend, a huge bat winged humanoid, twelve feet tall, with large fangs that drip with a vile green liquid and a hulking red scaly body that bursts into flame when you are angered or excited.\n\r",
+		"Your fiery skin blackens as you are infused with the embodiment of ultimate evil.  You are the most powerful demon, the lord of all.  You are everything, nothing can oppose you.  Twenty foot tall, your torso drips with the vile acid of the Abyss.  A ravenous hunger is gnawing at your bones.  Welcome to Immortality..."
 	},
 	{
-"Your first transformation is quite remarkable, you grow to over seven feet tall,
-and your skin starts to dull and lose all signs of vitality.  Your teeth begin to
-extend.  The world starts to look different, you have left mortality behind.\n\r",
-"You start to grow, the base of your spine slowly extends into a short stump of
-a tail.  The metamorphosis is tearing you apart.  Your skin begin to harden, and
-your hands twist into claws.\n\r",
-"Once again the painful metamorphosis strikes.  Your bones rend through your
-scaled flesh as jagged spines shoot through your back.  You feel as if you are
-being wrenched apart.  You are now over ten feet tall, and your skin is covered
-with thick green scales.\n\r",
-"You transform once again.  This time a small pair of wings burst through your
-back.  Your hands and feet have become viscious claws, and your nose has extended
-into a snout.  Long jagged teeth begin to grow in your mouth, and your tail now
-reaches the floor.\n\r",
-"You fall to the floor in agony.  Clutching your chest as the transformation
-strikes.  You grow to over fifteen feet in length, towering above all the
-mortals that you have left behind.  Impenetrable scales now cover your body, 
-and smoke issues from your nostrils when you breathe.\n\r",
-"You grow to over twenty feet in length, your tail and claws grow at an alarming
-rate.  Your wings are now so powerful that you can fly.  Nobody can oppose you
-now.  Suddenly it hits you, a hunger so intense that you cannot ignore it.
-You must feed.\n\r",
+"Your first transformation is quite remarkable, you grow to over seven feet tall, and your skin starts to dull and lose all signs of vitality.  Your teeth begin to extend.  The world starts to look different, you have left mortality behind.\n\r", "You start to grow, the base of your spine slowly extends into a short stump of a tail.  The metamorphosis is tearing you apart.  Your skin begin to harden, and your hands twist into claws.\n\r",
+"Once again the painful metamorphosis strikes.  Your bones rend through your scaled flesh as jagged spines shoot through your back.  You feel as if you are being wrenched apart.  You are now over ten feet tall, and your skin is covered with thick green scales.\n\r",
+"You transform once again.  This time a small pair of wings burst through your back.  Your hands and feet have become viscious claws, and your nose has extended into a snout.  Long jagged teeth begin to grow in your mouth, and your tail now reaches the floor.\n\r",
+"You fall to the floor in agony.  Clutching your chest as the transformation strikes.  You grow to over fifteen feet in length, towering above all the mortals that you have left behind.  Impenetrable scales now cover your body, and smoke issues from your nostrils when you breathe.\n\r",
+"You grow to over twenty feet in length, your tail and claws grow at an alarming rate.  Your wings are now so powerful that you can fly.  Nobody can oppose you now.  Suddenly it hits you, a hunger so intense that you cannot ignore it.  You must feed.\n\r",
 "",
 "",
 "",
 "",
-"You have reached the pinnacle of power for a dragon.  As your body undergoes
-the by now familiar transformation you grow to over fifty feet tall, with
-incredibly sharp claws and fangs, a powerful tail and a fiery breath weapon.
-Nobody can oppose you now.  You are the lord of the realm.\n\r",
+"You have reached the pinnacle of power for a dragon.  As your body undergoes the by now familiar transformation you grow to over fifty feet tall, with incredibly sharp claws and fangs, a powerful tail and a fiery breath weapon.  Nobody can oppose you now.  You are the lord of the realm.\n\r",
 ""
 	}
 };
@@ -6634,9 +6581,7 @@ void do_bite(CHAR_DATA *ch, char *argument)
     send_to_char("flowing from your neck.  Everthing slowly fades to black as your life\n\r",victim);
     send_to_char("force escapes your grasp.\n\n\r",victim);
     send_to_char("You open your eyes, and wretch.  Welcome to Undeath.\n\r",victim);
-    act("$n sinks $s fangs deep into $N.  Blood pouring from $S wound,
-$N collapses to the ground.  $n then feeds $N blood from $s wrist, 
-giving life back to the body.",ch,NULL,victim,TO_NOTVICT); 
+    act("$n sinks $s fangs deep into $N.  Blood pouring from $S wound, $N collapses to the ground.  $n then feeds $N blood from $s wrist, giving life back to the body.",ch,NULL,victim,TO_NOTVICT); 
     save_char_obj(victim);
     save_char_obj(ch);
 
@@ -7268,12 +7213,8 @@ void do_infect(CHAR_DATA *ch, char *argument)
     WAIT_STATE(ch, 10);
 
     act("You sink your claws deep into $N's chest, spreading the evil disease.",ch,NULL,victim,TO_CHAR);
-    send_to_char("As the light of the moon bathes your victim, coarse hair sprouts
-from their body.  You have created another creature of the night.\n\r",ch);
-    act("$N plunges his claws deep within your chest.  You feel a searing pain, 
-then a horrible ripping sensation as your body twists and writhes under the
-transformation.  Coarse hair sprouts from your body and your teeth extend into
-fangs.\n\r", victim, NULL, ch , TO_CHAR);
+    send_to_char("As the light of the moon bathes your victim, coarse hair sprouts from their body.  You have created another creature of the night.\n\r",ch);
+    act("$N plunges his claws deep within your chest.  You feel a searing pain, then a horrible ripping sensation as your body twists and writhes under the transformation.  Coarse hair sprouts from your body and your teeth extend into fangs.\n\r", victim, NULL, ch , TO_CHAR);
 }
 
 void do_sprinkle(CHAR_DATA *ch, char *argument)
@@ -7366,10 +7307,7 @@ void do_sprinkle(CHAR_DATA *ch, char *argument)
     send_to_char("They sprout huge gossamer wings as a result of the transformation.\n\r",ch);
     send_to_char("Another elf has joined the ranks of the Eladrin, Congratulations.\n\r",ch);
 
-    act("$N's reaches into a bag of magic dust.  Chanting mystical syllables
-you suddenly feel a strange transformation taking place.  A pair of huge 
-gossamer wings sprout from your back.  You are now an Eladrin, a Coure to 
-be precise, one of the faerie-lords of lore.", victim, NULL, ch , TO_CHAR);
+    act("$N's reaches into a bag of magic dust.  Chanting mystical syllables you suddenly feel a strange transformation taking place.  A pair of huge gossamer wings sprout from your back.  You are now an Eladrin, a Coure to be precise, one of the faerie-lords of lore.", victim, NULL, ch , TO_CHAR);
 }
 
 void do_teach(CHAR_DATA *ch, char *argument)
@@ -7482,9 +7420,7 @@ void do_teach(CHAR_DATA *ch, char *argument)
     act("You enroll $N as an apprentice in the mystic arts.\n\r",ch,NULL,victim,TO_CHAR);
     send_to_char("They are a good student, and soon they about to begin their training.\n\r",ch);
 
-    act("$n starts to teach you about the ways of the Warlocks, and you 
-take your first step into becoming an Archmage.", ch, NULL, victim, 
-TO_VICT); }
+    act("$n starts to teach you about the ways of the Warlocks, and you take your first step into becoming an Archmage.", ch, NULL, victim, TO_VICT); }
 
 void do_gate( CHAR_DATA *ch, char *argument )
 {

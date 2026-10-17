@@ -134,9 +134,10 @@ int     accept          args( ( int s, struct sockaddr *addr, int *addrlen ) );
 int     bind            args( ( int s, struct sockaddr *name, int namelen ) );
 */
 
+#if 0 // by prool
 int     close           args( ( int fd ) );
-int     getpeername     args( ( int s, struct sockaddr *name, int *namelen ) );
-int     getsockname     args( ( int s, struct sockaddr *name, int *namelen ) );
+//int     getpeername     args( ( int s, struct sockaddr *name, int *namelen ) ); // by prool
+//int     getsockname     args( ( int s, struct sockaddr *name, int *namelen ) );
 int     gettimeofday    args( ( struct timeval *tp, struct timezone *tzp ) );
 int     listen          args( ( int s, int backlog ) );
 int     read            args( ( int fd, char *buf, int nbyte ) );
@@ -144,6 +145,8 @@ int     select          args( ( int width, fd_set *readfds, fd_set *writefds,
 			    fd_set *exceptfds, struct timeval *timeout ) );
 int     socket          args( ( int domain, int type, int protocol ) );
 int     write           args( ( int fd, char *buf, int nbyte ) );
+#endif // by prool
+
 #endif
 
 #if     defined(riscbsd)
@@ -374,11 +377,13 @@ int main( int argc, char **argv )
 	    exit( 1 );
 	}
     }
+#if 0 // prool
     if (argv[2] && argv[2][0])
     {
 	fCopyOver = TRUE;
 	control = atoi(argv[3]);
     }
+#endif
 
     /*
      * Run the game.
@@ -2140,8 +2145,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	    write_to_buffer( d, "charcter with this name, please make sure that this is a suitable name.\r\n", 0 );
 	    write_to_buffer( d, "Nonsensical names like Ugawangogo just aren't fashionable, and phrases\n\r", 0 );
 	    write_to_buffer( d, "shortened into names like Cizmyass aren't in either.  If you want to be\n\r", 0 );
-	    write_to_buffer( d, "really fashionable then please choose a
-cool name, like Strom, or Hairball\r\n", 0 );
+	    write_to_buffer( d, "really fashionable then please choose a cool name, like Strom, or Hairball\r\n", 0 );
 	    write_to_buffer( d, "(guess who wrote this), and then the imms will let you keep it too..\r\n\n\r", 0 );
 	    write_to_buffer( d, "-=[**]=-=[**]=-=[**]=-=[**]=-=[**]=-=[**]=-=[**]=-=[**]=-=[**]=-=[**]=-=[**]=-\n\r\n\r", 0);
 	    sprintf( buf, "Did I get that right, %s (Y/N)? ", argument );
@@ -2868,9 +2872,7 @@ bool check_parse_name( char *name )
      * Reserved words.
      */
     if ( is_name( name, 
-	"all auto immortal self someone something the you demise balance circle 
-         loner honor shit fuck wank bastard clinton elf human gnome half half-elf dalamar
-	 restrict allow mitzrah whois gurgle") )
+	"all auto immortal self someone something the you demise balance circle loner honor shit fuck wank bastard clinton elf human gnome half half-elf dalamar restrict allow mitzrah whois gurgle") )
 	return FALSE;
 	
 

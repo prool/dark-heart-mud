@@ -15,30 +15,6 @@
  *  around, comes around.						   *
  ***************************************************************************/
  
-/* game tables */
-extern	const	struct	clan_type	clan_table[MAX_CLAN];
-extern	const	struct	position_type	position_table[];
-extern	const	struct	sex_type	sex_table[];
-extern	const	struct	size_type	size_table[];
-
-/* flag tables */
-extern	const	struct	flag_type	new_flags[];
-extern	const	struct	flag_type	act_flags[];
-extern	const	struct	flag_type	plr_flags[];
-extern	const	struct	flag_type	affect_flags[];
-extern	const	struct	flag_type	off_flags[];
-extern	const	struct	flag_type	imm_flags[];
-extern	const	struct	flag_type	form_flags[];
-extern	const	struct	flag_type	part_flags[];
-extern	const	struct	flag_type	comm_flags[];
-extern	const	struct	flag_type	extra_flags[];
-extern	const	struct	flag_type	wear_flags[];
-extern	const	struct	flag_type	weapon_flags[];
-extern	const	struct	flag_type	container_flags[];
-extern	const	struct	flag_type	portal_flags[];
-extern	const	struct	flag_type	room_flags[];
-extern	const	struct	flag_type	exit_flags[];
-
 struct flag_type
 {
     char *name;
@@ -72,4 +48,30 @@ struct size_type
 {
     char *name;
 };
+
+/* game tables */
+#if 1 // prool
+extern	const	struct	clan_type	clan_table[MAX_CLAN]; // by prool
+extern	const	struct	position_type	position_table[];
+extern	const	struct	sex_type	sex_table[];
+extern	const	struct	size_type	size_table[];
+
+/* flag tables */
+extern	const	struct	flag_type	new_flags[];
+extern	const	struct	flag_type	act_flags[];
+extern	const	struct	flag_type	plr_flags[];
+extern	const	struct	flag_type	affect_flags[];
+extern	const	struct	flag_type	off_flags[];
+extern	const	struct	flag_type	imm_flags[];
+extern	const	struct	flag_type	form_flags[];
+extern	const	struct	flag_type	part_flags[];
+extern	const	struct	flag_type	comm_flags[];
+extern	const	struct	flag_type	extra_flags[];
+extern	const	struct	flag_type	wear_flags[];
+extern	const	struct	flag_type	weapon_flags[];
+extern	const	struct	flag_type	container_flags[];
+extern	const	struct	flag_type	portal_flags[];
+extern	const	struct	flag_type	room_flags[];
+extern	const	struct	flag_type	exit_flags[];
+#endif
 

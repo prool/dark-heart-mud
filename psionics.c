@@ -577,7 +577,7 @@ void do_psiskill(CHAR_DATA *ch, char *argument)
 
 /***  Nasty global variable for picky functions */
 
-char *target_name;
+extern char *target_name; // by prool
 
 void do_psi(CHAR_DATA *ch, char *argument)
 {

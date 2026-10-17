@@ -3833,13 +3833,11 @@ void do_buyhouse(CHAR_DATA *ch, char *argument)
 	    {
 	 	if (olc_create_room(room, dir) == NULL)
 		{
-		    stc("BIG bug.  Out of rooms in area.  Report to
-Mitzrah.\n\r", ch);
+		    stc("BIG bug.  Out of rooms in area.  Report to Mitzrah.\n\r", ch);
 		    return;
 		}
 		WRITE_STR(room->exit[dir]->u1.to_room->name, "Main Street.");
-		WRITE_STR(room->exit[dir]->u1.to_room->description, "You are standing in the middle of one of the main connecting\n\rstreets in the housing estate.\n\r");
-	    }
+		WRITE_STR(room->exit[dir]->u1.to_room->description, "You are standing in the middle of one of the main connecting\n\rstreets in the housing estate.\n\r"); }
 	    room = room->exit[dir]->u1.to_room;
 	    strcat(route, cdir);
 	    room2 = room;
@@ -3849,8 +3847,7 @@ Mitzrah.\n\r", ch);
 	        {
 		    if (olc_create_room(room, dir2) == NULL) 
 		    {
-		    	stc("BIG bug.  Out of rooms in area.  Report to
-Mitzrah.\n\r", ch);
+		    	stc("BIG bug.  Out of rooms in area.  Report to Mitzrah.\n\r", ch);
 		    	return;
 		    }		
 		    WRITE_STR(room2->exit[dir2]->u1.to_room->name, "Side Street.");
@@ -3864,8 +3861,7 @@ Mitzrah.\n\r", ch);
 		    char buf[1000];
 		    if (olc_create_room(room2, dir3) == NULL) 
 		    {
-		    	stc("BIG bug.  Out of rooms in area.  Report to
-Mitzrah.\n\r", ch);
+		    	stc("BIG bug.  Out of rooms in area.  Report to Mitzrah.\n\r", ch);
 		    	return;
 		    }		
 		    sprintf(buf, "%s's home.", GET_PC_NAME(ch));
@@ -4004,13 +4000,8 @@ void item_spec_2(CHAR_DATA *victim, char *argument)
 void item_spec_100(CHAR_DATA *victim, char *argument)
 {
     CHAR_DATA *vch;
-	send_to_char("The blade of your sword radiates with the intense 
-blackness of the Overlord\n\rof the Abyss, and Lord of Darkness,
-Blorgy-poo.\n\r",victim);
-	act("The blade of $n's sword radiates with the intense blackness of the 
-Overlord\n\rof the Abyss, and Lord of Darkness, Whimpy.\n\rYou are struck
-down
-by the tyrannical power held withing the blade.",victim,NULL,NULL,TO_ROOM);
+	send_to_char("The blade of your sword radiates with the intense blackness of the Overlord\n\rof the Abyss, and Lord of Darkness, Blorgy-poo.\n\r",victim);
+	act("The blade of $n's sword radiates with the intense blackness of the Overlord\n\rof the Abyss, and Lord of Darkness, Whimpy.\n\rYou are struck down by the tyrannical power held withing the blade.",victim,NULL,NULL,TO_ROOM);
 	victim->hit = victim->max_hit;
 	victim->move = victim->max_move;
 	for (vch = victim->in_room->people; vch != NULL; vch = vch->next)

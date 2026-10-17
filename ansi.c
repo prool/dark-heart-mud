@@ -149,7 +149,11 @@ void send_title( DESCRIPTOR_DATA *d )
 	int i, j;
 	d->value = -1;
 	ansi_goto_desc( d, 1, 1 );
+#if 0 // 1 - standard mode, 0 - prool mode
 	write_to_buffer( d, help_greeting, 0);
+#else
+	write_to_buffer( d, "\r\nBy Prool\r\nName? \r\n", 0);
+#endif
 	hits += 1;
  	if (hits > 99999) { hits -= 99999; highhits += 1; }
 	save_hits();

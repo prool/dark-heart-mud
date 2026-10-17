@@ -3710,6 +3710,8 @@ struct  social_type
 /*
  * Global constants.
  */
+
+#if 1 // by prool
 extern  const   struct  str_app_type    str_app         [31];
 extern  const   struct  int_app_type    int_app         [31];
 extern  const   struct  wis_app_type    wis_app         [31];
@@ -3723,13 +3725,12 @@ extern  const   struct  item_type       item_table      [];
 extern  const   struct  wiznet_type     wiznet_table    [];
 extern  const   struct  attack_type     attack_table    [];
 extern  const   struct  race_type       race_table      [];
-extern  const   struct  form_type       form_data       [MAX_FORMS];
 extern  const   struct  stance_type     stances         [12];
 extern  const   struct  mage_abil_type  magabil_table   [11][6];
 extern  const   char    *               lang_name       [NUM_LANGUAGES];
-extern  const   struct  worship_type    worship_table   [];
+//extern  const   struct  worship_type    worship_table   []; // by prool
 extern  const   struct  pc_race_type    pc_race_table   [];
-extern  const   struct  spec_type       spec_table      [];
+//extern  const   struct  spec_type       spec_table      [];
 extern  const   struct  liq_type        liq_table       [];
 extern  const	char	*		trigger		[NUM_TRIGS];
 extern  const   struct  skill_type      skill_table     [MAX_SKILL];
@@ -3737,11 +3738,13 @@ extern  const	struct	skilltree_type	skill_tree	[MAX_NON_SPELL_SKILLS];
 extern  const   struct  psi_type        psi_table       [NUM_PSI_SLOTS];
 extern  const   struct  group_type      group_table     [MAX_GROUP];
 extern          struct  social_type      social_table    [MAX_SOCIALS];
+extern	const	struct	form_type	form_data	[MAX_FORMS];
+#endif
+extern  const   struct  form_type       form_data       [MAX_FORMS];
 extern  const   char    *		discipline	[MAX_DISCIPLINES];
 extern	const	char	*		dir_name	[6];
 extern	const	char	*		colour_name	[8];
 extern	const	char	*		score_word	[30];
-extern	const	struct	form_type	form_data	[MAX_FORMS];
 
 /*
  * Global variables.
@@ -4155,7 +4158,7 @@ char *  capitalize      args( ( const char *str ) );
 void    append_file     args( ( CHAR_DATA *ch, char *file, char *str ) );
 void    bug             args( ( const char *str, int param ) );
 void    log_string      args( ( const char *str ) );
-void logf (char * fmt, ...);
+//void logf (char * fmt, ...);
 void    tail_chain      args( ( void ) );
 char *  person          args( ( CHAR_DATA *ch, CHAR_DATA *looker ) );
 MOB_PROG_DATA * get_prog_index args( ( char *argument ) );
